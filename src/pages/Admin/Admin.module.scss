@@ -1,0 +1,119 @@
+
+
+.section__home{
+    padding: 80px 0px ;
+    min-height: 100vh;
+}
+
+.invitation{
+
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    
+    &__title{
+        
+        color: #000;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 33.6px */
+
+    }
+
+    &__input{
+        // width: 100%;
+        
+        border-radius: 8px;
+        border: 1px solid var(--interface-gray-90, #E6E6E6);
+        padding: 12px;
+
+        color: var(--label-gray-10, #1A1A1A);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        outline: none;
+        transition: all ease .5s;
+
+         &:hover{
+            border: 1px solid var(--interface-gray-10, #1a1a1a85);
+         }
+
+         &__error{
+            border: 1px solid var(--error, #E55C5C);
+         }
+
+    }
+
+
+    &__btn{
+        
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        color: var(--label-gray-10, #fff);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        outline: none;
+        transition: all ease .3s;
+        background: #386AEA;
+        margin-top: 10px;
+        text-decoration: none;
+        
+        &:hover{
+            background: #224bb3;
+        }
+
+    }
+
+    &__center{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    &__label{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            
+            &__title{
+                color: #000;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 19.6px */
+            }
+
+            &__subtitle{
+                color: #000;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%; /* 19.6px */
+            }
+
+        }
+    }
+
+
+
+}
+

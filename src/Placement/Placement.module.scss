@@ -1,0 +1,26 @@
+.section__place{
+    padding: 90px 0px;
+}
+
+.placementAll{
+
+    &__btn{
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        padding: 10px 15px;
+
+        border-radius: 10px;
+        background-color: rgb(5, 175, 5);
+        color: #fff;
+        cursor: pointer;
+        transition: all ease .3s;
+
+        &:hover{
+            background-color: rgb(6, 123, 6);
+        }
+    }
+
+}

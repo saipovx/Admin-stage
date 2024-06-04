@@ -1,0 +1,130 @@
+.tabs{
+    display: flex ;
+    align-items: center;
+
+    gap: 15px;
+
+    &__modal{
+        position: relative;
+        
+        &__content{
+            position: absolute;
+            top: 40px;
+
+            padding: 0px 10px 10px 0px;
+            border-radius: 10px;
+            background: #fff;
+            width: 400px;
+            height: 400px;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 10px;
+              }
+              
+              &::-webkit-scrollbar-track {
+                background: #e3ebff;
+              }
+              
+              &::-webkit-scrollbar-thumb {
+                background: #003bd2;
+                border-radius: 10px;
+              }
+              
+              &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+              }
+
+            &__item{
+                padding: 5px 10px;
+                background: #386aea;
+                color: #fff;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 140%; 
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-top: 10px;
+                border: 1px solid #fff;
+
+                cursor: pointer;
+                transition: all ease .3s;
+
+                &:hover{
+                    background-color: #fff;
+                    color: #000;
+                border: 2px solid #386aea;
+
+                }
+
+            }
+        }
+
+    }
+
+    &__text{
+        padding: 5px 10px;
+        border-radius: 8px;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; 
+        transition: all ease .3s;
+        cursor: pointer;
+        color: #fff;
+        background-color: #386aea;
+        border: none !important;
+
+    }
+
+        &__textRed{
+        padding: 5px 10px;
+        border-radius: 8px;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; 
+        transition: all ease .3s;
+        cursor: pointer;
+        color: #fff;
+        background-color: #b62424;
+        border: none !important;
+
+    }
+
+    &__item{
+        border: none !important;
+        background-color: #bcbcbc;
+        padding: 5px 10px;
+        border-radius: 8px;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; 
+        transition: all ease .3s;
+        cursor: pointer;
+        color: #fff;
+    
+        &:hover {
+            background-color: #386aea;
+          }
+    }
+
+}
+
+ 
+.react-tabs__tab--selected {
+    background: #386aea !important;
+    border: none !important;
+
+    &:focus {
+        outline: none;
+        border: none !important;
+      }
+}
